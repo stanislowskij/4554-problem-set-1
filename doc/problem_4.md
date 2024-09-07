@@ -3,9 +3,9 @@
 Find the following multiplicative inverses if they exist,
 otherwise explain why they don’t exist:
 
-- $4^{-1}\space\text{in}\space\mathbb{Z}_{9} \\\$
+- $4^{-1}\space\text{in}\space\mathbb{Z}_{9}$
 
-- $4^{-1}\space\text{in}\space\mathbb{Z}_{12} \\\$
+- $4^{-1}\space\text{in}\space\mathbb{Z}_{12}$
 
 - $5^{-1}\space\text{in}\space\mathbb{Z}_{12}$
 
