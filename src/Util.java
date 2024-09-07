@@ -21,12 +21,15 @@ public class Util {
             wkbrusurbmbwjk w jxxru yt bprjuwri wk bpr pjsr bpmb bpr
             riirkvr jx jqwkmcmk qmumbr cwhh urymwk wkbmvb
             """;
+    final static String PROBLEM_1_2 = "xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpit ghlxiwiwtxgqadds";
 
     // To test stuff on the fly
     public static void main(String[] args) {
         System.out.println(frequencyAnalysis(PROBLEM_1_1).toString()); 
         System.out.println(desubstitutifier(PROBLEM_1_1, "mlvdrxopwXqhyvjsXuibnecatX"));
         //                                                      "abcdefghijklmnopqrstuvwxyz"
+        System.out.println("\n------------\n\n" + frequencyAnalysis(PROBLEM_1_2).toString());
+        System.out.println(desubstitutifier(PROBLEM_1_2, "pqrstuvwxyzabcdefghijklmno"));
     }
 
     /**

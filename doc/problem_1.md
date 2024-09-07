@@ -80,4 +80,16 @@ essence of okinawan karate will remain intact
 
 ------
 
-**1.2** We received the following ciphertext which was encoded with a shift cipher: `xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpit ghlxiwiwtxgqadds`. 1. Perform an attack against the cipher based on a letter frequency count: How many letters do you have to identify through a frequency count to recover the key? What is the cleartext?
+**1.2.** We received the following ciphertext which was encoded with a shift cipher: `xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpit ghlxiwiwtxgqadds`. 1. Perform an attack against the cipher based on a letter frequency count: How many letters do you have to identify through a frequency count to recover the key? What is the cleartext?
+
+### Solution
+
+The frequency analysis method from earlier shows that the most commonly-occurring letter in the string is T, followed by I. 
+
+`[t=14.93%, i=13.43%, x=10.45%, a=7.46%, g=7.46%, l=7.46%, p=7.46%, h=5.97%, w=5.97%, d=4.48%, c=2.99%, j=2.99%, k=1.49%, q=1.49%, r=1.49%, s=1.49%, u=1.49%, v=1.49%]`
+
+T is the only letter that needs to be identified. If T is 19, and it is the encoding of E, which is 4, then the shift is 15. Putting this into the decryption method from earlier, the plaintext is:
+
+`ifweallunitewewillcausetheriverstostainthegreatwaterswiththeirblood`
+
+
