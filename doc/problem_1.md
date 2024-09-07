@@ -36,3 +36,48 @@ that the letter frequencies in it might not perfectly align with that of general
 English language from the table.
 
 ### Solution
+
+The code for frequency analysis is in the [Util.java](/src/Util.java) file.
+
+Calling the method frequencyAnalysis() on the ciphertext above outputs:
+
+`[r=13.00%, b=10.53%, m=9.60%, k=7.59%, j=7.43%, w=7.28%, i=6.35%, p=4.64%, u=3.72%, d=3.56%, h=3.56%, v=3.41%, x=3.10%, y=2.94%, n=2.63%, s=2.63%, t=2.01%, l=1.24%, o=1.08%, q=1.08%, a=0.77%, c=0.77%, e=0.77%, f=0.15%, g=0.15%]`
+
+Assuming these frequencies align with those of the English alphabet, we can say that `e -> r` and `t -> b`.
+
+There are multiple occurrences of "`bpr`" in the text, so `h -> p`.
+
+I then made a method to map a substitution alphabet to the English alphabet and decode an input string, defaulting to '?' if the key for that letter is unknown. The decoded text, so far, looks like:
+
+`?e????e the ????t??e ?? the ????? ???e?e?t? ?? ??t? ...`
+
+From here I found more words. `a -> m`, `c -> v`, `i -> w`, `s -> i`. Then the first few words became clear: 
+
+`"because the practice of the basic ..."`
+
+For the cipher itself, I got as far as decoding the key to be `mlvdrxopwXqhyvjsXuibnecatX`, where X are unknowns.
+
+The decrypted text:
+
+```
+because the practice of the basic movements of kata is
+the focus and mastery of self is the essence of
+matsubayashi ryu karate do i shall try to elucidate the
+movements of the kata according to my interpretation
+based on forty years of study
+
+it is not an easy task to explain each movement and its
+significance and some must remain unexplained to give a
+complete explanation one would have to be qualified and
+inspired to such an extent that he could reach the state
+of enlightened mind capable of recognizing soundless
+sound and shapeless shape i do not deem myself the final
+authority but my experience with kata has left no doubt
+that the following is the proper application and
+interpretation i offer my theories in the hope that the
+essence of okinawan karate will remain intact
+```
+
+------
+
+**1.2** We received the following ciphertext which was encoded with a shift cipher: `xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpit ghlxiwiwtxgqadds`. 1. Perform an attack against the cipher based on a letter frequency count: How many letters do you have to identify through a frequency count to recover the key? What is the cleartext?
